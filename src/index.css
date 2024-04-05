@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .input-container input {
+        @apply p-2 text-2xl text-black tracking-widest font-medium outline-none
+    }
+    .input-container input.satu {
+        @apply border border-neutral-700 h-[60%] rounded-t;
+    }
+    .input-container input.dua {
+        @apply border-l border-b border-r border-l-neutral-700 border-b-neutral-700 border-r-neutral-700 h-[40%] rounded-b text-end;
+    }
+
+    .button-container .box {
+        @apply bg-neutral-100 border border-neutral-700 rounded text-black flex justify-center items-center text-2xl font-medium;
+    }
+    .button-container .box:hover {
+        @apply bg-neutral-200;
+    }
+}
